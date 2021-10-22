@@ -1,1 +1,1 @@
-ls -la | grep '^-' | wc -l
+find . -print | wc -l
