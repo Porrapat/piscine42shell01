@@ -1,1 +1,1 @@
-ifconfig | grep -o -E '([[:xdigit:]]{2}:){5}[[:xdigit:]]{2}'
+ifconfig -a | grep ether | sed 's/ether//g' | sed 's/[[:space:]]//g'
