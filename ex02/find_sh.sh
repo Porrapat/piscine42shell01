@@ -1,3 +1,2 @@
 #!/bin/bash
-ifconfig -a | grep -o -E '([[:xdigit:]]{2}:){5}[[:xdigit:]]{2}'
-
+find . -type f \( -name "*.sh" \) | sed "s/\.sh$//" | sed "s/\.\///"
