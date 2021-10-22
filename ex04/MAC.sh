@@ -1,1 +1,2 @@
-ifconfig -a | grep ether | sed 's/ether//g' | sed 's/[[:space:]]//g'
+#!/bin/bash
+ifconfig | grep "ether " | cut -c 8-24
